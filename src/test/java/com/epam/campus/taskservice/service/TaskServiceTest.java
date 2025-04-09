@@ -22,11 +22,11 @@ class TaskServiceTest {
         // Prepare mock data with meaningful task details
         Task mockTask1 = new Task();
         mockTask1.setId(1L);
-        mockTask1.setName("Test Task 1");
+        mockTask1.setName("Mock Task 1");
 
         Task mockTask2 = new Task();
         mockTask2.setId(2L);
-        mockTask2.setName("Test Task 2");
+        mockTask2.setName("Mock Task 2");
 
         // Mock repository behavior
         Mockito.when(mockRepository.findAll()).thenReturn(Arrays.asList(mockTask1, mockTask2));
