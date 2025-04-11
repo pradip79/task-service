@@ -39,7 +39,7 @@ class TaskServiceTest {
 
         // Assert that the first task has correct details
         assertNotNull(tasks.get(0).getId(), "Task ID should not be null");
-        assertEquals("Test Task 1", tasks.get(0).getName(), "Task name should match");
+        assertEquals("Mock Task 1", tasks.get(0).getName(), "Task name should match");
 
         // Assert that the second task has correct details
         assertEquals(2L, tasks.get(1).getId(), "Task ID should match");
