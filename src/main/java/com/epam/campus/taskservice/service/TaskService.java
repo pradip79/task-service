@@ -15,7 +15,11 @@ public class TaskService {
     }
 
     public List<Task> getAllTasks() {
-        return taskRepository.findAll();
+        //return taskRepository.findAll();
+        return taskRepository.findAll()
+                .stream()
+                .filter(task -> task.getName() != null)
+                .toList();
     }
 
     public Task addTask(Task task) {
